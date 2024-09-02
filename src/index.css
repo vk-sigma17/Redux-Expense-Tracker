@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+    
+    background-color: black;
+}
+.app{
+    width: 500px;
+    background-color: white;
+    
+}
+.app-heading{
+    /* height: 60px; */
+    height: 10vh;
+    /* background-color: blue; */
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.heading-logo{
+    display: flex;
+   
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+form{
+    padding: 20px;
+
+}
+.form-container{
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 20px;
+}
+.form-container input{
+    text-indent: 7px;
+    border-radius: 7px;
+    border: 1px solid #D5D4D8;
+}
+.submit-btn{
+    grid-column: 1/-1;
+    border-radius: 7px;
+    border: none;
+    background-color: #4CAF50;
+    font-weight: 800;
+    color: white;
+}
+.total{
+    /* height: 60px; */
+    height: 10vh;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;   
+    padding-left: 20px;
+    color: white;
+    font-weight: 800;
+}
+.list-show{
+    /* min-height: 270px; */
+    min-height: 40vh;
+    padding: 10px 20px;
+    list-style: none;
+}
+.list-show h2{
+    color: gray;
+    font-weight: normal;
+}
+.list-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #D5D4D8;
+    font-size: 20px;
+}
+.expense-description {
+    flex: 1; /* Allows the description to take up the remaining space */
+    align-self: flex-start;
+    max-width: 30%; /* Adjust as needed */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent wrapping of text */
+}
+.expense-amount {
+    flex: 1; /* Allows the description to take up the remaining space */
+    align-self: flex-start;
+    max-width: 30%; /* Adjust as needed */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent wrapping of text */
+}
+
+.list-value{
+    color: #4CAF50;
+}
+
+
+.one{
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+.two{
+    border: none;
+    font-size: 16px;
+    margin-left: 5px;
+    background-color: transparent;
+}
+.list-count{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+@media  screen and (max-width: 475px) {
+    .app{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .app-heading{
+        font-size: 20px;
+    }
+    .heading-logo{
+        margin-top: 5px;
+    }
+    .form-container{
+        display: grid;
+        grid-template: 40px 40px 40px/ 1fr;
+    }
+    .list-show h2{
+        font-size: 17px;
+    }
+    .total{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
